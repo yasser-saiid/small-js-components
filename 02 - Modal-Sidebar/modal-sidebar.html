@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal - Sidebar</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- main css style -->
+    <link rel="stylesheet" href="../main.css" />
+    <!-- modal and sidebar css file -->
+    <link rel="stylesheet" href="./modal-sidebar.css" />
+  </head>
+  <body>
+    <!-- header and title -->
+    <header class="header">
+      <div class="section-center header-center">
+        <div class="title">
+          <h3>modal - sidebar</h3>
+        </div>
+        <div class="theme">
+          <span class="theme-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <button class="btn theme-btn">light</button>
+        </div>
+      </div>
+    </header>
+    <!-- beck to home section -->
+    <div class="back-to section-center">
+      <a href="../index.html">home</a>
+      <span> / modal - sidebar</span>
+    </div>
+    <!-- start sidebar -->
+    <!-- sidebar open btn -->
+    <button class="btn sidebar-open-btn">
+      <i class="fa fa-bars"></i>
+    </button>
+    <aside class="sidebar">
+      <!-- sidebar header -->
+      <header class="sidebar-header">
+        <button class="btn sidebar-close-btn">
+          <i class="fa fa-times"></i>
+        </button>
+      </header>
+      <!-- sidebar content -->
+    </aside>
+    <!-- end sidebar -->
+    <!-- sart modal -->
+    <div class="modal">
+      <button class="btn close-modal">
+        <i class="fa fa-times fa-2x"></i>
+      </button>
+      <!-- modal content -->
+      <div class="modal-content"></div>
+    </div>
+    <!-- end modal -->
+    <section class="section-container gallery">
+      <div class="section-center gallery-center">
+        <!-- single item -->
+        <article class="gallery-item">
+          <img src="./imgs/banner_1.jpg" alt="img-1" class="img" />
+          <div class="gallery-item-overlay">
+            <button class="show-more btn">show more</button>
+          </div>
+        </article>
+        <!-- single item -->
+        <article class="gallery-item">
+          <img src="./imgs/banner_2.jpg" alt="img-1" class="img" />
+          <div class="gallery-item-overlay">
+            <button class="show-more btn">show more</button>
+          </div>
+        </article>
+        <!-- single item -->
+        <article class="gallery-item">
+          <img src="./imgs/banner_3.jpg" alt="img-1" class="img" />
+          <div class="gallery-item-overlay">
+            <button class="show-more btn">show more</button>
+          </div>
+        </article>
+        <!-- single item -->
+        <article class="gallery-item">
+          <img src="./imgs/banner_4.jpg" alt="img-1" class="img" />
+          <div class="gallery-item-overlay">
+            <button class="show-more btn">show more</button>
+          </div>
+        </article>
+        <!-- single item -->
+        <article class="gallery-item">
+          <img src="./imgs/banner_7.jpg" alt="img-1" class="img" />
+          <div class="gallery-item-overlay">
+            <button class="show-more btn">show more</button>
+          </div>
+        </article>
+        <!-- single item -->
+        <article class="gallery-item">
+          <img src="./imgs/banner_6.jpg" alt="img-1" class="img" />
+          <div class="gallery-item-overlay">
+            <button class="show-more btn">show more</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- modal and sidebar js file -->
+    <script src="./modal-sidebar.js"></script>
+  </body>
+</html>
