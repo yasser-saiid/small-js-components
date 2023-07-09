@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="dark-theme">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Menu</title>
     <!-- font awesome -->
-    <link rel="stylesheet" href="..fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
     <!-- normalize css -->
     <link rel="stylesheet" href="../normalize.css" />
     <!-- main css style -->
     <link rel="stylesheet" href="../main.css" />
+    <!-- menu css file -->
+    <link rel="stylesheet" href="./menu.css" />
   </head>
   <body>
     <!-- header and title -->
     <header class="header">
       <div class="section-center header-center">
         <div class="title">
-          <h3>reviews</h3>
+          <h3>menu</h3>
         </div>
         <div class="theme">
           <span class="theme-icon">
@@ -32,9 +34,87 @@
       <span> / menu</span>
     </div>
     <section class="section-container">
-      <div class="section-center">
-        <h3>start</h3>
+      <!-- section title -->
+      <div class="section-center section-header">
+        <!-- title -->
+        <div class="title">
+          <h2>Our Products</h2>
+          <p>
+            Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
+            justo sed rebum vero dolor duo.
+          </p>
+        </div>
+        <!-- btn suffle -->
+        <div class="btn-container">
+          <!-- <button type="button" class="btn filter-btn" data-type="fresh">
+            fresh
+          </button> -->
+        </div>
+      </div>
+      <!-- menu -->
+      <div class="section-center our-menu">
+        <!-- <article class="menu-item">
+          <div class="item-img">
+            <span>new</span>
+            <img src="./imgs/product-1.jpg" alt="product-item" class="img" />
+          </div>
+          <div class="item-info">
+            <h4>tomato</h4>
+            <div>
+              <span class="discount">19.25</span>
+              <span class="price">29.75</span>
+            </div>
+          </div>
+          <div class="item-options">
+            <button type="button" class="btn">
+              <i class="fa fa-eye"></i>
+              View detail
+            </button>
+            <button type="button" class="btn">
+              <i class="fa fa-shopping-bag"></i>
+              Add to cart
+            </button>
+          </div>
+        </article> -->
       </div>
     </section>
+    <section class="section-container about-section">
+      <div class="section-center about-center">
+        <div class="about-img">
+          <img src="./imgs/about.jpg" alt="about us img" class="img" />
+        </div>
+        <div class="about-content">
+          <h2>Best Organic Fruits And Vegetables</h2>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+          <ul>
+            <li>
+              <i class="fa fa-check"></i>
+              Tempor erat elitr rebum at clita
+            </li>
+            <li>
+              <i class="fa fa-check"></i>
+              Aliqu diam amet diam et eos
+            </li>
+            <li>
+              <i class="fa fa-check"></i>
+              Clita duo justo magna dolore erat amet
+            </li>
+          </ul>
+          <button type="button" class="btn">read more</button>
+          <div class="products-slider">
+            <!-- <img
+              src="./imgs/product-1.jpg"
+              alt="product-img"
+              class="img slid-img"
+            /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./menu.js"></script>
   </body>
 </html>
