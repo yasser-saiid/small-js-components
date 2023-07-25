@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goal's list</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- main css style -->
+    <link rel="stylesheet" href="../main.css" />
+    <!-- tabs css file -->
+    <link rel="stylesheet" href="./goal.css" />
+  </head>
+  <body>
+    <!-- header and title -->
+    <header class="header">
+      <div class="section-center header-center">
+        <div class="title">
+          <h3>goal's list</h3>
+        </div>
+        <div class="theme">
+          <span class="theme-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <button class="btn theme-btn">light</button>
+        </div>
+      </div>
+    </header>
+    <!-- beck to home section -->
+    <div class="back-to section-center">
+      <a href="../index.html">home</a>
+      <span> / goal's list</span>
+    </div>
+    <section class="section-container">
+      <div class="section-center">
+        <h2 class="title">goal's</h2>
+        <p class="alert"></p>
+        <form class="form">
+          <!-- form add task -->
+          <div class="form-control">
+            <input
+              type="text"
+              name="goal"
+              id="goal"
+              placeholder="add your goal"
+            />
+            <button type="submit" class="btn add-goal">add</button>
+          </div>
+        </form>
+        <!-- todos container -->
+        <article class="goals-container">
+          <article class="goal-list">
+            <!-- <div class="goal-item" data-id="12548">
+              <p class="goal-name">goal-1</p>
+              <div class="btn-container">
+                <button class="btn edit">
+                  <i class="fa fa-edit"></i>
+                </button>
+                <button class="btn delete">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+            </div> -->
+          </article>
+          <!-- clear all bnt -->
+          <button class="btn clear">clear all</button>
+        </article>
+      </div>
+    </section>
+    <!-- tabs js file -->
+    <script src="./goal.js"></script>
+  </body>
+</html>

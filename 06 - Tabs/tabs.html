@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabs</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- main css style -->
+    <link rel="stylesheet" href="../main.css" />
+    <!-- tabs css file -->
+    <link rel="stylesheet" href="./tabs.css" />
+  </head>
+  <body>
+    <!-- header and title -->
+    <header class="header">
+      <div class="section-center header-center">
+        <div class="title">
+          <h3>tabs</h3>
+        </div>
+        <div class="theme">
+          <span class="theme-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <button class="btn theme-btn">light</button>
+        </div>
+      </div>
+    </header>
+    <!-- beck to home section -->
+    <div class="back-to section-center">
+      <a href="../index.html">home</a>
+      <span> / tabs</span>
+    </div>
+    <section class="section-container">
+      <div class="title-wrapper section-center">
+        <h2 class="title">about <span>us</span></h2>
+        <p class="sub-titel">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi veniam
+          excepturi necessitatibus.
+        </p>
+      </div>
+      <div class="section-center about-center">
+        <!-- about-img -->
+        <article class="about-img">
+          <img src="./people.png" alt="about picture" class="img" />
+        </article>
+        <!-- about-content -->
+        <article class="about-content">
+          <!-- tabs -->
+          <ul class="tabs">
+            <li>
+              <button type="button" class="btn tab-btn active" data-id="home">
+                <i class="fa fa-home"></i>
+                home
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn tab-btn" data-id="blog">
+                <i class="fa fa-blog"></i>
+                blog
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn tab-btn" data-id="help">
+                <i class="fa-solid fa-envelope"></i>
+                help
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn tab-btn" data-id="about">
+                <i class="fa fa-user"></i>
+                about
+              </button>
+            </li>
+          </ul>
+          <!-- content -->
+          <article class="contents">
+            <!-- single item -->
+            <div id="home" class="home-text box active">
+              <h5>home</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                non laboriosam eius animi quae mollitia magnam, commodi beatae
+                deleniti, quia distinctio. Asperiores esse unde eveniet.
+              </p>
+            </div>
+            <!-- single item -->
+            <div id="blog" class="blog-text box">
+              <h5>blog </h5>
+              <p>
+                magnam, commodi beatae deleniti, quia distinctio. Asperiores
+                esse unde eveniet..Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Placeat non laboriosam eius animi quae
+                mollitia Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Placeat
+              </p>
+            </div>
+            <!-- single item -->
+            <div id="help" class="help-text box">
+              <h5>help </h5>
+              <p>
+                quia distinctio. Asperiores esse unde eveniet..Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Placeat non laboriosam
+                eius animi quae mollitia magnam, commodi beatae deleniti, quia
+                distinctio. Asperiores
+              </p>
+            </div>
+            <!-- single item -->
+            <div id="about" class="about-text box">
+              <h5>about </h5>
+              <p>
+                Asperiores esse unde eveniet. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Placeat non laboriosam eius animi
+                quae mollitia magnam, commodi beatae deleniti, quia distinctio..
+              </p>
+            </div>
+          </article>
+        </article>
+      </div>
+    </section>
+    <!-- tabs js file -->
+    <script src="./tabs.js"></script>
+  </body>
+</html>

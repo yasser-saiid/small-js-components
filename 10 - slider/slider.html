@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- main css style -->
+    <link rel="stylesheet" href="../main.css" />
+    <!-- tabs css file -->
+    <link rel="stylesheet" href="./slider.css" />
+  </head>
+  <body>
+    <!-- header and title -->
+    <header class="header">
+      <div class="section-center header-center">
+        <div class="title">
+          <h3>slider</h3>
+        </div>
+        <div class="theme">
+          <span class="theme-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <button class="btn theme-btn">light</button>
+        </div>
+      </div>
+    </header>
+    <!-- beck to home section -->
+    <div class="back-to section-center">
+      <a href="../index.html">home</a>
+      <span> / slider</span>
+    </div>
+    <section class="section-container">
+      <div class="section-center slider-center">
+        <!-- main silder -->
+        <!-- slider btn -->
+        <div class="main-slider-btn">
+          <button class="btn prev-btn">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="btn next-btn">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+        <article class="main-slider">
+          <!-- slider items -->
+          <div class="main-slider-item" id="img-1">
+            <img src="./imgs/1.jpg" alt="main slider img-1" class="img" />
+            <div class="slid-item-desc">
+              <h3>color's</h3>
+            </div>
+          </div>
+          <div class="main-slider-item" id="img-2">
+            <img src="./imgs/2.jpg" alt="main slider img-2" class="img" />
+            <div class="slid-item-desc">
+              <h3>through nature</h3>
+            </div>
+          </div>
+          <div class="main-slider-item" id="img-3">
+            <img src="./imgs/3.jpg" alt="main slider img-3" class="img" />
+            <div class="slid-item-desc">
+              <h3>world</h3>
+            </div>
+          </div>
+          <div class="main-slider-item" id="img-4">
+            <img src="./imgs/4.jpg" alt="main slider img-3" class="img" />
+            <div class="slid-item-desc">
+              <h3>island - ait</h3>
+            </div>
+          </div>
+          <!-- end of slider itens -->
+        </article>
+        <!-- slider scale -->
+        <article class="scale-slider">
+          <div class="scale-slider-item" data-id="img-1">
+            <img src="./imgs/1.jpg" alt="scale slider img-1" class="img" />
+          </div>
+          <div class="scale-slider-item" data-id="img-2">
+            <img src="./imgs/2.jpg" alt="scale slider img-2" class="img" />
+          </div>
+          <div class="scale-slider-item" data-id="img-3">
+            <img src="./imgs/3.jpg" alt="scale slider img-3" class="img" />
+          </div>
+          <div class="scale-slider-item" data-id="img-4">
+            <img src="./imgs/4.jpg" alt="scale slider img-3" class="img" />
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- tabs js file -->
+    <script src="./slider.js"></script>
+  </body>
+</html>
