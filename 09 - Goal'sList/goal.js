@@ -65,6 +65,7 @@ function setBackToDefault() {
   editFlag = false
   editID = ''
   addGoalBtn.textContent = 'add'
+  input.blur()
 }
 
 // delete all goal's item from the list
@@ -101,9 +102,10 @@ function editGoalItem(e) {
   const element = e.currentTarget.parentElement.parentElement
   const id = element.dataset.id
   editElemnt = element.querySelector('.goal-name')
-  input.value = editElemnt.textContent
   editID = id
   editFlag = true
+  input.value = editElemnt.textContent
+  input.focus()
   addGoalBtn.textContent = 'edit'
   dispalyAlert(`you will update "${editElemnt.textContent}" goal !`, 'warning')
 }

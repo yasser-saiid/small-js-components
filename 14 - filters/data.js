@@ -1,0 +1,58 @@
+const allProducts = [
+  {
+    id: 1,
+    category: 'vegetables',
+    img: './imgs/product-1.jpg',
+    name: 'tomato',
+    price: 29.35,
+  },
+  {
+    id: 2,
+    category: 'fruits',
+    img: './imgs/product-2.jpg',
+    name: 'pineapple',
+    price: 23.75,
+  },
+  {
+    id: 3,
+    category: 'vegetables',
+    img: './imgs/product-3.jpg',
+    name: 'pepper',
+    price: 14.45,
+  },
+  {
+    id: 4,
+    category: 'fruits',
+    img: './imgs/product-4.jpg',
+    name: 'strawberry',
+    price: 25.65,
+  },
+  {
+    id: 5,
+    category: 'vegetables',
+    img: './imgs/product-5.jpg',
+    name: 'cucumber',
+    price: 23.35,
+  },
+  {
+    id: 6,
+    category: 'vegetables',
+    img: './imgs/product-6.jpg',
+    name: 'tomato',
+    price: 29.35,
+  },
+  {
+    id: 7,
+    category: 'vegetables',
+    img: './imgs/product-7.jpg',
+    name: 'potato',
+    price: 30.75,
+  },
+  {
+    id: 8,
+    category: 'fruits',
+    img: './imgs/product-8.jpg',
+    name: 'banana',
+    price: 25.75,
+  },
+]

@@ -1,0 +1,5 @@
+if you using app.js file you should using modual like this
+<script src="./app.js" type="modual"></script>
+
+
+and move to data.js and change allProducts array to products and then do export to product array

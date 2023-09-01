@@ -122,6 +122,10 @@ modal
   display: grid;
   place-items: center;
 }
+.modal-content p {
+  text-align: center;
+  margin-top: 2rem;
+}
 /* 
 ====================
 gallery 

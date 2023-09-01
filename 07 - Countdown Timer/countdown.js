@@ -14,19 +14,19 @@ const months = [
 ]
 
 const weekdays = [
-  'Saturday',
   'Sunday',
   'Monday',
   'Tuesday',
   'Wednesday',
   'Thursday',
   'Friday',
+  'Saturday',
 ]
 
 const deadLind = document.querySelector('.dead-line')
 
 // set deadline date dynamic
-const deadLindDate = new Date(2023, 7, 5, 17, 30, 0)
+const deadLindDate = new Date(2024, 0, 1, 20, 30, 0)
 // set full date and time format Thursday, 20 July 2023 17:30 pm
 const weekday = weekdays[deadLindDate.getDay()]
 const date = deadLindDate.getDate()
@@ -77,3 +77,28 @@ function getremainingTime() {
 
 const countdown = setInterval(getremainingTime, 1000)
 getremainingTime()
+
+//  set digital clock
+const digitalClock = document.querySelector('.digital-clock')
+function clock() {
+  const currentTime = new Date()
+  const hours = currentTime.getHours()
+  const mintues = currentTime.getMinutes()
+  const secondes = currentTime.getSeconds()
+  function fromatTime(timeItem) {
+    if (timeItem < 10) {
+      return `0${timeItem}`
+    } else {
+      return timeItem
+    }
+  }
+  const clockHour = digitalClock.querySelector('.hours')
+  const clockMinute = digitalClock.querySelector('.minutes')
+  const clockSecond = digitalClock.querySelector('.seconds')
+
+  clockHour.textContent = `${fromatTime(hours)}:`
+  clockMinute.textContent = `${fromatTime(mintues)}:`
+  clockSecond.textContent = `${fromatTime(secondes)}`
+}
+
+const digital = setInterval(clock, 1000)

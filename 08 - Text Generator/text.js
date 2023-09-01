@@ -18,7 +18,11 @@ const alertText = document.querySelector('.alert')
 form.addEventListener('submit', function (evt) {
   evt.preventDefault()
   const textAmount = parseInt(input.value)
-  if (isNaN(textAmount) || textAmount <= 0 || textAmount > 8) {
+  if (
+    isNaN(textAmount) ||
+    textAmount <= 0 ||
+    textAmount > textData.length - 1
+  ) {
     alertText.style.display = 'block'
     input.style.borderColor = '#842029'
   } else {
@@ -33,5 +37,6 @@ form.addEventListener('submit', function (evt) {
   setTimeout(function () {
     alertText.style.display = 'none'
     input.style.borderColor = 'initial'
+    input.value = ''
   }, 1500)
 })

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tabs</title>
+    <title>count-up animation</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
     <!-- normalize css -->
@@ -11,14 +11,14 @@
     <!-- main css style -->
     <link rel="stylesheet" href="../main.css" />
     <!-- tabs css file -->
-    <link rel="stylesheet" href="./tabs.css" />
+    <link rel="stylesheet" href="./numbers.css" />
   </head>
   <body>
     <!-- header and title -->
     <header class="header">
       <div class="section-center header-center">
         <div class="title">
-          <h3>tabs</h3>
+          <h3>count-up</h3>
         </div>
         <div class="theme">
           <span class="theme-icon">
@@ -31,14 +31,28 @@
     <!-- beck to home section -->
     <div class="back-to section-center">
       <a href="../index.html">home</a>
-      <span> / tabs</span>
+      <span> / count-up animation</span>
     </div>
     <section class="section-container">
-      <div class="section-center">
-        <h3>start</h3>
+      <div class="numbers-center section-center">
+        <!-- single number card item -->
+        <article class="card">
+          <span class="number" data-value="150">0</span>
+          <p class="number-text"><span>succeeded</span> projects</p>
+        </article>
+        <!-- single number card item -->
+        <article class="card">
+          <span class="number" data-value="837">0</span>
+          <p class="number-text"><span>working</span> hours spent</p>
+        </article>
+        <!-- single number card item -->
+        <article class="card">
+          <span class="number" data-value="210">0</span>
+          <p class="number-text"><span>happy</span> clients</p>
+        </article>
       </div>
     </section>
     <!-- tabs js file -->
-    <script src="./tabs.js"></script>
+    <script src="./numbers.js"></script>
   </body>
 </html>

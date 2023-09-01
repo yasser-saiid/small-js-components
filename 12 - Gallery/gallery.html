@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- main css style -->
+    <link rel="stylesheet" href="../main.css" />
+    <!-- our team css file -->
+    <link rel="stylesheet" href="./gallery.css" />
+  </head>
+  <body>
+    <!-- header and title -->
+    <header class="header">
+      <div class="section-center header-center">
+        <div class="title">
+          <h3>gallery</h3>
+        </div>
+        <div class="theme">
+          <span class="theme-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <button class="btn theme-btn">light</button>
+        </div>
+      </div>
+    </header>
+    <!-- beck to home section -->
+    <div class="back-to section-center">
+      <a href="../index.html">home</a>
+      <span> / gallery</span>
+    </div>
+    <!-- start project structure -->
+    <section class="section-container our-team">
+      <div class="section-title section-center">
+        <!-- light img container -->
+        <article class="lights">
+          <img
+            src="./Images/light-1.jpg"
+            class="img"
+            title="light-img-1"
+            data-id="1"
+            alt="light"
+          />
+          <img
+            src="./Images/light-2.jpg"
+            class="img"
+            title="light-img-2"
+            data-id="2"
+            alt="light"
+          />
+          <img
+            src="./Images/light-3.jpg"
+            class="img"
+            title="light-img-3"
+            data-id="3"
+            alt="light"
+          />
+        </article>
+        <!-- nature img container -->
+        <article class="nature">
+          <img
+            src="./Images/nature-1.jpg"
+            class="img"
+            title="nature-img-1"
+            data-id="1"
+            alt="nature"
+          />
+          <img
+            src="./Images/nature-2.jpg"
+            class="img"
+            title="nature-img-2"
+            data-id="2"
+            alt="nature"
+          />
+          <img
+            src="./Images/nature-3.jpg"
+            class="img"
+            title="nature-img-3"
+            data-id="3"
+            alt="nature"
+          />
+          <img
+            src="./Images/nature-4.jpg"
+            class="img"
+            title="nature-img-4"
+            data-id="4"
+            alt="nature"
+          />
+        </article>
+      </div>
+      <!-- start modal section -->
+      <section class="modal">
+        <button class="close-btn btn">
+          <i class="fa fa-times"></i>
+        </button>
+        <!-- modal content -->
+        <div class="modal-content">
+          <div class="modal-main-img">
+            <button class="btn prev-btn">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+            <button class="btn next-btn">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+            <img
+              src="./Images/nature-2.jpg"
+              class="img main-img"
+              alt="nature-2"
+            />
+            <h4 class="img-name">img title</h4>
+          </div>
+          <div class="modal-imgs">
+            <img
+              src="./Images/nature-2.jpg"
+              class="img modal-img selected"
+              title="img-1"
+              data-id="1"
+              alt="nature"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- end of modal section -->
+    </section>
+
+    <!-- script file -->
+    <script src="./fb-code.js"></script>
+  </body>
+</html>

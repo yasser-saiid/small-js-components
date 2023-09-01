@@ -159,3 +159,14 @@ Variables
 .follow .icon:hover {
   transform: translateY(-5px);
 }
+
+/* digital-clock */
+
+.digital-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.digital-clock h5 {
+  color: var(--gray-dark);
+}

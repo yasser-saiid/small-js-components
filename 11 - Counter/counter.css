@@ -1,0 +1,76 @@
+:root {
+  /* main colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8ff;
+  --primary-1: #222;
+  --primary-2: #242222;
+  --font-color: #1d1d27;
+  /* helper colors */
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+  --yellow-light: #ffc107;
+  --yellow-dark: #ff9800;
+  --gray-light: #dddbdb;
+  --gray-dark: #a9a9a9;
+  /* borders */
+  --border-radius: 0.6rem;
+  --border-solid: 1px solid #dddddd;
+  /* width */
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  /* font family */
+  --font-family: 'Heebo', sans-serif, 'Belanosima', sans-serif;
+  /* box shadow*/
+  --light-shadow: 2px 4px 8px -1px #00000057, 0 1px 2px 0 #00000030;
+  --dark-shadow: 0px 10px 15px -3px #00000075, 0px 4px 6px -2px #0000005e;
+
+  /* more custmize */
+  --letter-spacing: 1px;
+  --line-height: 1.6;
+  --transition: all 0.3s linear;
+}
+/* =================
+project
+*/
+.counter {
+  box-shadow: var(--dark-shadow);
+  margin: 4rem auto;
+  padding: 3rem 1rem;
+}
+.counter-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fb-counter,
+.oop-counter {
+  max-width: var(--fixed-width);
+  margin: 2rem auto;
+  text-align: center;
+}
+.counter-value {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.conter-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.counter-btn {
+  background-color: transparent;
+  border: 1px solid var(--primary-1);
+  padding: 0.375rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
