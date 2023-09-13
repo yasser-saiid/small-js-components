@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meals</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- main css style -->
+    <link rel="stylesheet" href="../main.css" />
+    <!-- our team css file -->
+    <link rel="stylesheet" href="./meals.css" />
+  </head>
+  <body>
+    <!-- header and title -->
+    <header class="header">
+      <div class="section-center header-center">
+        <div class="title">
+          <h3>meals</h3>
+        </div>
+        <div class="theme">
+          <span class="theme-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <button class="btn theme-btn">light</button>
+        </div>
+      </div>
+    </header>
+    <!-- beck to home section -->
+    <div class="back-to section-center">
+      <a href="../index.html">home</a>
+      <span> / meals</span>
+    </div>
+    <!-- start project structure -->
+    <section class="section-container">
+      <!-- start search form -->
+      <div class="section-center">
+        <form class="form">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Find your favorite meal"
+            name="meal"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <!-- end of search form -->
+      <!-- start loading and meals -->
+      <div class="section-center meals-center">
+        <!-- lodainge component -->
+        <article class="loading">
+          <div class="loader"></div>
+        </article>
+        <!-- subtitle -->
+        <h4 class="sub-title"></h4>
+        <!-- all meals container -->
+        <div class="meals-container"></div>
+      </div>
+      <!-- end of loading and meals -->
+    </section>
+
+    <!-- script file -->
+    <script type="module" src="./meals.js"></script>
+  </body>
+</html>

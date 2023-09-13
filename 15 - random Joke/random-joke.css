@@ -36,3 +36,55 @@
 project
 ======================
 */
+::selection {
+  background-color: var(--primary-1);
+  color: var(--bg-primary);
+}
+
+.joke-center {
+  height: 50vh;
+  background-color: var(--bg-primary);
+  display: grid;
+  place-content: center;
+}
+
+.joke-container {
+  text-align: center;
+}
+
+.joke {
+  color: var(--font-color);
+  font-size: 1.25rem;
+}
+
+.get-joke {
+  background-color: var(--primary-1);
+  color: var(--bg-primary);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  border: 2px solid var(--primary-1);
+  font-size: 1.25rem;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: fit-content;
+}
+.get-joke:active {
+  transform: scale(0.8);
+}
+
+.get-joke i {
+  margin-left: 15px;
+  transition: var(--transition);
+}
+
+.get-joke:hover {
+  color: var(--primary-1);
+  background-color: var(--bg-primary);
+}
+
+.get-joke:hover i {
+  margin-left: 25px;
+  transform: rotateX(360deg);
+}

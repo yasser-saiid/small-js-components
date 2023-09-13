@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random user</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- main css style -->
+    <link rel="stylesheet" href="../main.css" />
+    <!-- our team css file -->
+    <link rel="stylesheet" href="./random-user.css" />
+  </head>
+  <body>
+    <!-- header and title -->
+    <header class="header">
+      <div class="section-center header-center">
+        <div class="title">
+          <h3>Random Joke</h3>
+        </div>
+        <div class="theme">
+          <span class="theme-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <button class="btn theme-btn">light</button>
+        </div>
+      </div>
+    </header>
+    <!-- beck to home section -->
+    <div class="back-to section-center">
+      <a href="../index.html">home</a>
+      <span> / Random user</span>
+    </div>
+    <!-- start project structure -->
+    <section class="section-container">
+      <div class="section-center user-center">
+        <div class="user-card">
+          <div class="img-container">
+            <img
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="random user"
+              class="img user-img"
+            />
+          </div>
+          <div class="user-info">
+            <div class="text-container">
+              <small class="user-title">my name is</small>
+              <p class="user-value">Jimes Rodrigo</p>
+            </div>
+            <div class="info-icons">
+              <button class="btn icon" data-label="name">
+                <i class="fa fa-user"></i>
+              </button>
+              <button class="btn icon" data-label="email">
+                <i class="fa fa-envelope-open"></i>
+              </button>
+              <button class="btn icon" data-label="age">
+                <i class="fa fa-calendar-days"></i>
+              </button>
+              <button class="btn icon" data-label="address">
+                <i class="fa fa-map"></i>
+              </button>
+              <button class="btn icon" data-label="phone">
+                <i class="fa fa-phone"></i>
+              </button>
+            </div>
+            <button class="btn get-user">random user</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- script file -->
+    <script type="module" src="./random-user.js"></script>
+  </body>
+</html>
