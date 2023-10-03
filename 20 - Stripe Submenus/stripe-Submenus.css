@@ -1,0 +1,185 @@
+:root {
+  /* main colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8ff;
+  --primary-1: #351c75;
+  --primary-2: #280a75;
+  --font-color: #1d1d27;
+  /* helper colors */
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+  --yellow-light: #ffc107;
+  --yellow-dark: #ff9800;
+  --gray-light: #dddbdb;
+  --gray-dark: #a9a9a9;
+  /* borders */
+  --border-radius: 0.6rem;
+  --border-solid: 1px solid #dddddd;
+  /* width */
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  /* font family */
+  --font-family: 'Heebo', sans-serif, 'Belanosima', sans-serif;
+  /* box shadow*/
+  --light-shadow: 2px 4px 8px -1px #00000057, 0 1px 2px 0 #00000030;
+  --dark-shadow: 0px 10px 15px -3px #00000075, 0px 4px 6px -2px #0000005e;
+
+  /* more custmize */
+  --letter-spacing: 1px;
+  --line-height: 1.6;
+  --transition: all 0.3s linear;
+}
+/* 
+=================
+project
+====================
+*/
+
+.github-users {
+  min-height: 80vh;
+  margin-top: 2rem;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+/* 
+=====================
+loading section
+=====================
+*/
+
+.loading {
+  background-color: var(--bg-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  /* display: none; */
+}
+
+.spiner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-1);
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  position: relative;
+  animation: spiner 1s linear infinite backwards;
+}
+.spiner::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-1);
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+@keyframes spiner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 
+==============================
+user container section
+==============================
+*/
+
+.users-center {
+  margin-bottom: 1.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.user-card {
+  border: var(--border-solid);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1.3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 0.5rem auto;
+  border: 2px solid var(--primary-1);
+}
+
+.user-card h5 {
+  color: var(--font-color);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.user-card a {
+  border-radius: var(--border-radius);
+  border: var(--border-solid);
+  transition: var(--transition);
+  text-align: center;
+  color: var(--font-color);
+}
+
+.user-card a:hover {
+  background-color: var(--primary-1);
+  color: var(--bg-primary);
+}
+
+/* 
+=========================
+btn container section
+=========================
+*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-container button {
+  background-color: var(--primary-1);
+  color: var(--bg-primary);
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.375rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-1);
+}
+
+.btn-container button:hover,
+.btn-container button.active {
+  background-color: var(--bg-primary);
+  color: var(--primary-1);
+}
+
+button.next,
+button.prev {
+  background-color: var(--primary-2);
+}
