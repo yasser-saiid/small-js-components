@@ -3,7 +3,7 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f8f8ff;
   --primary-1: #351c75;
-  --primary-2: #2b175f;
+  --primary-2: #280a75;
   --font-color: #1d1d27;
   /* helper colors */
   --red-light: #f8d7da;
@@ -31,81 +31,155 @@
   --line-height: 1.6;
   --transition: all 0.3s linear;
 }
-/* =================
+/* 
+=================
 project
+====================
 */
-.section-title h2 {
-  font-size: calc(1.75rem + 0.5vw);
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 3rem;
-  color: var(--primary-1);
-}
 
-/* btn */
-.btn-container {
-  background-color: var(--primary-1);
-  width: fit-content;
-  border-radius: var(--border-radius);
-  padding: 0.4rem;
-  position: absolute;
-  right: 20px;
-  top: -20px;
-}
-
-.prev,
-.next {
-  color: var(--bg-primary);
-  transition: var(--transition);
-}
-.prev {
-  border-right: var(--border-solid);
-}
-
-/* member card */
-.member-card {
-  background-color: var(--bg-primary);
-  padding: 2.5rem 1.5rem;
-  max-width: var(--fixed-width);
-  margin: 4rem auto 1rem auto;
-  box-shadow: var(--light-shadow);
-  border-radius: var(--border-radius);
+.github-users {
+  min-height: 80vh;
+  margin-top: 2rem;
+  display: grid;
+  place-content: center;
   position: relative;
 }
 
-.quote i {
-  color: var(--primary-1);
+/* 
+=====================
+loading section
+=====================
+*/
+
+.loading {
+  background-color: var(--bg-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  /* display: none; */
 }
-.quote p {
-  margin-top: 0.7rem;
-  color: var(--font-color);
+
+.spiner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-1);
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  position: relative;
+  animation: spiner 1s linear infinite backwards;
 }
-.meber-info {
-  display: flex;
+.spiner::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-1);
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+@keyframes spiner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 
+==============================
+user container section
+==============================
+*/
+
+.users-center {
+  margin-bottom: 1.5rem;
+  display: grid;
+  justify-content: center;
   align-items: center;
   gap: 1.2rem;
-}
-.member-img {
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.member-img img {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
+.user-card {
+  border: var(--border-solid);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1.3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-.meber-info .name h4 {
+.user-card img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 0.5rem auto;
+  border: 2px solid var(--primary-1);
+}
+
+.user-card h5 {
+  color: var(--font-color);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.user-card a {
+  border-radius: var(--border-radius);
+  border: var(--border-solid);
+  transition: var(--transition);
+  text-align: center;
+  color: var(--font-color);
+}
+
+.user-card a:hover {
+  background-color: var(--primary-1);
+  color: var(--bg-primary);
+}
+
+/* 
+=========================
+btn container section
+=========================
+*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-container button {
+  background-color: var(--primary-1);
+  color: var(--bg-primary);
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.375rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-1);
+}
+
+.btn-container button:hover,
+.btn-container button.active {
+  background-color: var(--bg-primary);
   color: var(--primary-1);
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: calc(1.25rem + 0.3vw);
 }
 
-.meber-info .name span {
-  text-transform: uppercase;
-  color: var(--gray-dark);
-  font-size: 0.9rem;
+button.next,
+button.prev {
+  background-color: var(--primary-2);
 }
